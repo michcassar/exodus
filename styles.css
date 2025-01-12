@@ -39,7 +39,7 @@ header h1{
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 5rem;
   font-family: 'Times New Roman', Times, serif;
@@ -51,7 +51,7 @@ header p{
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 3rem;
   z-index: 1;
@@ -82,7 +82,7 @@ header p{
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -238,6 +238,7 @@ footer .social-media a img:hover {
   transform: scale(1.2); 
 }
 
+
 @media (max-width: 768px) {
   header h1 {
     font-size: 3rem;
@@ -261,9 +262,42 @@ footer .social-media a img:hover {
     padding-top: 70%;
     height: auto;
   }
+  .sponsors-table {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
 
+  .sponsor-title {
+    grid-column: span 2; /* Title spans all 2 columns */
+  }
   
   
+}
+
+#sponsors {
+  text-align: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 10vh;
+}
+
+.sponsors-table {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+}
+
+.sponsor-title {
+  grid-column: span 1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor img {
+  width: 100%;
+  height: auto;
+
 }
 
 
