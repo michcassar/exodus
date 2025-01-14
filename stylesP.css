@@ -106,11 +106,10 @@ body {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  color: #fff;
-  background-color: ##511F58;
-  border-radius: 5px;
+  color: white;
+  background-color: #511F58;
   text-decoration: none;
-  transition: background-color 0.3s;
+  border-radius: 4px;
 }
 
 .view-more-button:hover {
@@ -119,24 +118,23 @@ body {
 
 /* Footer */
 footer {
-  background: #FFFFFF;
-  color: #fff;
+  background-color: #f9f9f9;
   text-align: center;
   padding: 20px 0;
 }
 
 footer p {
-  margin-bottom: 10px;
+  margin: 0;
+  font-weight: bold;
 }
 
 .social-media a {
   margin: 0 10px;
-  display: inline-block;
 }
 
 .social-media img {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Responsive design */
